@@ -25,6 +25,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    // Added by Anuj
     
     ledStates = [[NSMutableArray alloc] initWithObjects:false, false, false, false, false, nil];
     delayTimes = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithFloat:2.0], 2.0, 2.0, 2.0, 2.0, nil];
