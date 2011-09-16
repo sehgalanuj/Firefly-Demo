@@ -25,7 +25,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     ledStates = [[NSMutableArray alloc] initWithObjects:false, false, false, false, false, nil];
-    delayTimes = [[NSMutableArray alloc] initWithObjects:2.0, 2.0, 2.0, 2.0, 2.0, nil];
+    delayTimes = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithFloat:2.0], 2.0, 2.0, 2.0, 2.0, nil];
     
     leds = [[NSMutableArray alloc] initWithObjects:led0, led1, led2, led3, led4, nil];
     
