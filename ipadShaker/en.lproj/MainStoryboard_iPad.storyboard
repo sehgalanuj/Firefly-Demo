@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="telosb.png" id="ode-wK-HKP">
-                                <rect key="frame" x="49" y="193" width="321" height="248"/>
+                                <rect key="frame" x="37" y="193" width="303" height="248"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="jacobs.png" id="e3F-ry-mJh">
@@ -30,25 +30,47 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="led_off.png" id="TUk-FI-v1g">
-                                <rect key="frame" x="20" y="449" width="93" height="45"/>
+                                <rect key="frame" x="6" y="449" width="93" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="led_off.png" id="35u-AF-Gt2">
-                                <rect key="frame" x="95" y="449" width="93" height="45"/>
+                                <rect key="frame" x="74" y="449" width="93" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="led_off.png" id="EU7-mY-LaA">
-                                <rect key="frame" x="169" y="449" width="93" height="45"/>
+                                <rect key="frame" x="144" y="449" width="93" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="led_off.png" id="OR3-tA-zhk">
-                                <rect key="frame" x="244" y="449" width="93" height="45"/>
+                                <rect key="frame" x="212" y="449" width="93" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="led_off.png" id="LP7-VR-XMx">
-                                <rect key="frame" x="319" y="449" width="93" height="45"/>
+                                <rect key="frame" x="282" y="449" width="93" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="firefly-real-graph.png" id="Su6-2C-0Op">
+                                <rect key="frame" x="373" y="161" width="311" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="firefly-reachback-graph.png" id="hej-KT-fZi">
+                                <rect key="frame" x="702" y="156" width="304" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Figure 1. The Firefly synchronization approach." id="0bX-XH-hAX">
+                                <rect key="frame" x="378" y="341" width="318" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Figure 2. The Reachback Firefly approach." id="fg8-Xl-48B">
+                                <rect key="frame" x="718" y="341" width="285" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -69,22 +91,12 @@
     <resources>
         <image name="CASE.png" width="1529" height="235"/>
         <image name="cnds.png" width="1117" height="213"/>
+        <image name="firefly-reachback-graph.png" width="960" height="532"/>
+        <image name="firefly-real-graph.png" width="959" height="529"/>
         <image name="jacobs.png" width="485" height="175"/>
         <image name="led_off.png" width="250" height="250"/>
         <image name="telosb.png" width="800" height="566"/>
     </resources>
-    <classes>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="led0" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="led1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="led2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="led3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="led4" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

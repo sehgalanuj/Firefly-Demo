@@ -29,6 +29,9 @@
 		60BDCF651423C497005264DD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60BDCF641423C497005264DD /* libz.dylib */; };
 		60BDCF681423C5D2005264DD /* desktop.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 60BDCF671423C5D2005264DD /* desktop.JPG */; };
 		60BDCF6A1423C5E4005264DD /* jub.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60BDCF691423C5E4005264DD /* jub.jpg */; };
+		751A9428142429BE00DB8E04 /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A9427142429BE00DB8E04 /* GlobalData.m */; };
+		7583E8D81423F8EC00E5FD3E /* firefly-reachback-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7583E8D61423F8EC00E5FD3E /* firefly-reachback-graph.png */; };
+		7583E8D91423F8EC00E5FD3E /* firefly-real-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7583E8D71423F8EC00E5FD3E /* firefly-real-graph.png */; };
 		75BB0B041423C9BA002065AD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BB0B031423C9BA002065AD /* Default-Landscape~ipad.png */; };
 		75BB0B061423CA3A002065AD /* desktop.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BB0B051423CA3A002065AD /* desktop.png */; };
 		75BB0B081423D275002065AD /* icon-sized.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BB0B071423D275002065AD /* icon-sized.png */; };
@@ -79,6 +82,10 @@
 		60BDCF641423C497005264DD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		60BDCF671423C5D2005264DD /* desktop.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desktop.JPG; sourceTree = "<group>"; };
 		60BDCF691423C5E4005264DD /* jub.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jub.jpg; sourceTree = "<group>"; };
+		751A9426142429BE00DB8E04 /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
+		751A9427142429BE00DB8E04 /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalData.m; sourceTree = "<group>"; };
+		7583E8D61423F8EC00E5FD3E /* firefly-reachback-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firefly-reachback-graph.png"; sourceTree = "<group>"; };
+		7583E8D71423F8EC00E5FD3E /* firefly-real-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firefly-real-graph.png"; sourceTree = "<group>"; };
 		75BB0B031423C9BA002065AD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		75BB0B051423CA3A002065AD /* desktop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desktop.png; sourceTree = "<group>"; };
 		75BB0B071423D275002065AD /* icon-sized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-sized.png"; sourceTree = "<group>"; };
@@ -153,6 +160,8 @@
 				60AE6D1314167535001E7A33 /* ViewController.h */,
 				60AE6D1414167535001E7A33 /* ViewController.m */,
 				60AE6D0214167535001E7A33 /* Supporting Files */,
+				751A9426142429BE00DB8E04 /* GlobalData.h */,
+				751A9427142429BE00DB8E04 /* GlobalData.m */,
 			);
 			path = ipadShaker;
 			sourceTree = "<group>";
@@ -196,6 +205,8 @@
 		60BDCF661423C5B4005264DD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7583E8D61423F8EC00E5FD3E /* firefly-reachback-graph.png */,
+				7583E8D71423F8EC00E5FD3E /* firefly-real-graph.png */,
 				75BB0B111423DC77002065AD /* led_off.png */,
 				75BB0B121423DC77002065AD /* led_on.png */,
 				75BB0B0B1423D925002065AD /* CASE.png */,
@@ -274,6 +285,8 @@
 				75BB0B101423D925002065AD /* jacobs.png in Resources */,
 				75BB0B131423DC77002065AD /* led_off.png in Resources */,
 				75BB0B141423DC77002065AD /* led_on.png in Resources */,
+				7583E8D81423F8EC00E5FD3E /* firefly-reachback-graph.png in Resources */,
+				7583E8D91423F8EC00E5FD3E /* firefly-real-graph.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +307,7 @@
 				60BDCF4B1423C314005264DD /* ASIInputStream.m in Sources */,
 				60BDCF4C1423C314005264DD /* ASINetworkQueue.m in Sources */,
 				60BDCF4D1423C314005264DD /* Reachability.m in Sources */,
+				751A9428142429BE00DB8E04 /* GlobalData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
