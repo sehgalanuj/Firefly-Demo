@@ -24,4 +24,6 @@
     int numberOfLeds;
 }
 
+- (IBAction)fireflyReset;
+
 @end

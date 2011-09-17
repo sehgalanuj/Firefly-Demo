@@ -14,6 +14,73 @@
 
 @implementation ViewController
 
+- (IBAction)fireflyReset {
+    
+    [[GlobalData sharedGlobalData].timer0 invalidate];
+    [[GlobalData sharedGlobalData].timer1 invalidate];
+    [[GlobalData sharedGlobalData].timer2 invalidate];
+    [[GlobalData sharedGlobalData].timer3 invalidate];
+    [[GlobalData sharedGlobalData].timer4 invalidate];
+    
+    [GlobalData sharedGlobalData].count = [NSNumber numberWithInt:0];
+    
+    NSNumber *val0 = [NSNumber numberWithInt:0];
+    NSNumber *val1 = [NSNumber numberWithInt:1];
+    NSNumber *val2 = [NSNumber numberWithInt:2];
+    NSNumber *val3 = [NSNumber numberWithInt:3];    
+    NSNumber *val4 = [NSNumber numberWithInt:4];    
+
+    [GlobalData sharedGlobalData].timer0 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time0 intValue] target:self selector:@selector(activateLed:) userInfo:val0 repeats:NO];
+    [GlobalData sharedGlobalData].timer1 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time1 intValue] target:self selector:@selector(activateLed:) userInfo:val1 repeats:NO];
+    [GlobalData sharedGlobalData].timer2 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time2 intValue] target:self selector:@selector(activateLed:) userInfo:val2 repeats:NO];
+    [GlobalData sharedGlobalData].timer3 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time3 intValue] target:self selector:@selector(activateLed:) userInfo:val3 repeats:NO];
+    [GlobalData sharedGlobalData].timer4 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time4 intValue] target:self selector:@selector(activateLed:) userInfo:val4 repeats:NO];
+    
+    NSLog(@"You just pressed the rest button");
+    
+    NSURL *url = [NSURL URLWithString:@"http://www.anujsehgal.com/cgi-bin/shake.cgi"];
+    
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setValidatesSecureCertificate:NO];
+    [request startSynchronous];
+    NSError *error = [request error];
+    
+    if (!error) 
+    {
+        NSLog(@"No error");
+        
+        NSString *result = [request responseString];
+        
+        NSLog(@"%@", result);
+        
+        if ([result hasPrefix:@"ok"])
+        {
+            NSLog(@"DO THE STUFF HERE!!!");
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Mote reset" message:@"You just triggered a mote reset!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+            [alert show];
+            [alert release];
+            
+            /*
+             //  reset the visual LEDs
+             idealDelay = rand() % 3;
+             
+             for (int i = 0; i<numberOfLeds; i++)
+             {
+             ledStates[i] = false;
+             delayTimes[i] = rand() % 5;
+             }
+             */
+            
+            
+        }
+    }
+    else
+    {
+        NSLog(@"Some error");
+    }    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -222,6 +289,26 @@
     {
         NSLog(@"You just shook the iPad");
         
+        [[GlobalData sharedGlobalData].timer0 invalidate];
+        [[GlobalData sharedGlobalData].timer1 invalidate];
+        [[GlobalData sharedGlobalData].timer2 invalidate];
+        [[GlobalData sharedGlobalData].timer3 invalidate];
+        [[GlobalData sharedGlobalData].timer4 invalidate];
+        
+        [GlobalData sharedGlobalData].count = [NSNumber numberWithInt:0];
+        
+        NSNumber *val0 = [NSNumber numberWithInt:0];
+        NSNumber *val1 = [NSNumber numberWithInt:1];
+        NSNumber *val2 = [NSNumber numberWithInt:2];
+        NSNumber *val3 = [NSNumber numberWithInt:3];    
+        NSNumber *val4 = [NSNumber numberWithInt:4];    
+        
+        [GlobalData sharedGlobalData].timer0 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time0 intValue] target:self selector:@selector(activateLed:) userInfo:val0 repeats:NO];
+        [GlobalData sharedGlobalData].timer1 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time1 intValue] target:self selector:@selector(activateLed:) userInfo:val1 repeats:NO];
+        [GlobalData sharedGlobalData].timer2 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time2 intValue] target:self selector:@selector(activateLed:) userInfo:val2 repeats:NO];
+        [GlobalData sharedGlobalData].timer3 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time3 intValue] target:self selector:@selector(activateLed:) userInfo:val3 repeats:NO];
+        [GlobalData sharedGlobalData].timer4 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)[[GlobalData sharedGlobalData].time4 intValue] target:self selector:@selector(activateLed:) userInfo:val4 repeats:NO];
+
             NSURL *url = [NSURL URLWithString:@"http://www.anujsehgal.com/cgi-bin/shake.cgi"];
             	
             ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
