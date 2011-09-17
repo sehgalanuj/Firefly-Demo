@@ -33,6 +33,7 @@
 		751A9428142429BE00DB8E04 /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A9427142429BE00DB8E04 /* GlobalData.m */; };
 		7583E8D81423F8EC00E5FD3E /* firefly-reachback-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7583E8D61423F8EC00E5FD3E /* firefly-reachback-graph.png */; };
 		7583E8D91423F8EC00E5FD3E /* firefly-real-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7583E8D71423F8EC00E5FD3E /* firefly-real-graph.png */; };
+		759D41511425175A0027CD58 /* firefly-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 759D41501425175A0027CD58 /* firefly-button.png */; };
 		75BB0B041423C9BA002065AD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BB0B031423C9BA002065AD /* Default-Landscape~ipad.png */; };
 		75BB0B061423CA3A002065AD /* desktop.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BB0B051423CA3A002065AD /* desktop.png */; };
 		75BB0B081423D275002065AD /* icon-sized.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BB0B071423D275002065AD /* icon-sized.png */; };
@@ -88,6 +89,7 @@
 		751A9427142429BE00DB8E04 /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalData.m; sourceTree = "<group>"; };
 		7583E8D61423F8EC00E5FD3E /* firefly-reachback-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firefly-reachback-graph.png"; sourceTree = "<group>"; };
 		7583E8D71423F8EC00E5FD3E /* firefly-real-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firefly-real-graph.png"; sourceTree = "<group>"; };
+		759D41501425175A0027CD58 /* firefly-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firefly-button.png"; sourceTree = "<group>"; };
 		75BB0B031423C9BA002065AD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		75BB0B051423CA3A002065AD /* desktop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desktop.png; sourceTree = "<group>"; };
 		75BB0B071423D275002065AD /* icon-sized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-sized.png"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		60BDCF661423C5B4005264DD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				759D41501425175A0027CD58 /* firefly-button.png */,
 				750DDE57142443DD00FEA2C9 /* firefly-text.png */,
 				7583E8D61423F8EC00E5FD3E /* firefly-reachback-graph.png */,
 				7583E8D71423F8EC00E5FD3E /* firefly-real-graph.png */,
@@ -291,6 +294,7 @@
 				7583E8D81423F8EC00E5FD3E /* firefly-reachback-graph.png in Resources */,
 				7583E8D91423F8EC00E5FD3E /* firefly-real-graph.png in Resources */,
 				750DDE58142443DD00FEA2C9 /* firefly-text.png in Resources */,
+				759D41511425175A0027CD58 /* firefly-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
