@@ -124,6 +124,8 @@
         [led3 setImage:image];
         [led4 setImage:image];
         
+        //[led0 setHidden:YES];
+        
         [GlobalData sharedGlobalData].timer0 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)1 target:self selector:@selector(activateLed:) userInfo:val0 repeats:NO];
         [GlobalData sharedGlobalData].timer1 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)1 target:self selector:@selector(activateLed:) userInfo:val1 repeats:NO];
         [GlobalData sharedGlobalData].timer2 = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)1 target:self selector:@selector(activateLed:) userInfo:val2 repeats:NO];
